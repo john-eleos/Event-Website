@@ -24,10 +24,10 @@ const Hero = () => {
               <div className="lg:pr-6 pb-11">
                 <i className="fa-solid fa-calendar-days text-3xl text-gray-500"></i>
 
-                <h1 className="text-xl font-bold mt-2">October 27, 2023</h1>
+                <h1 className="text-xl font-bold mt-2">October 27, 2025</h1>
 
                 <p className="text-gray-500 text-base font-normal mt-2">
-                  Join us at FlowBite 2023 to understand what’s next as the
+                  Join us at FlowBite 2025 to understand what’s next as the
                   global tech and startup ecosystem reimagines, rebuilds, and
                   rethinks the future of everything.
                 </p>
