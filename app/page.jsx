@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Socialproof from "./components/Socialproof";
+import Features from "./components/Features";
+import Team from "./components/Team";
 
 export default function Home() {
   return (
@@ -11,6 +13,8 @@ export default function Home() {
       <Hero />
       <About />
       <Socialproof />
+      <Features />
+      <Team />
     </>
   );
 }
