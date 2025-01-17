@@ -8,7 +8,7 @@ const Tickets = () => {
           <h1 className="text-3xl font-extrabold text-center lg:text-4xl">
             Get your tickets
           </h1>
-          <p className="text-left text-lg text-center my-4 font-normal text-gray-500">
+          <p className="text-lg text-center my-4 font-normal text-gray-500">
             Get the full Flowbite Web Summit experience by taking part in
             satellite events staged by our partners.
           </p>
