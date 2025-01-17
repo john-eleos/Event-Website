@@ -7,6 +7,7 @@ import Features from "./components/Features";
 import Team from "./components/Team";
 import Location from "./components/Location";
 import FAQ from "./components/FAQ";
+import Tickets from "./components/Tickets";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Team />
       <Location />
       <FAQ />
+      <Tickets />
     </>
   );
 }
