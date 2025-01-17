@@ -8,6 +8,7 @@ import Team from "./components/Team";
 import Location from "./components/Location";
 import FAQ from "./components/FAQ";
 import Tickets from "./components/Tickets";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Location />
       <FAQ />
       <Tickets />
+      <Footer />
     </>
   );
 }
