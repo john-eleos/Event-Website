@@ -5,6 +5,7 @@ import About from "./components/About";
 import Socialproof from "./components/Socialproof";
 import Features from "./components/Features";
 import Team from "./components/Team";
+import Location from "./components/Location";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Socialproof />
       <Features />
       <Team />
+      <Location />
     </>
   );
 }
