@@ -1,3 +1,7 @@
+"use client";
+
+
+
 import React from "react";
 import Link from "next/link";
 
@@ -7,7 +11,7 @@ const Footer = () => {
       <div className="w-screen flex-col lg:justify-items-center border-t border-gray-100 bg-gray-50">
         <div className="flex-col justify-items-center px-4 pt-8 lg:mt-24 lg:mb-8 lg:px-20 lg:py-0">
           <div className="pb-4">
-            <h1 className="text-center text-3xl font-extrabold lg:text-4xl">
+            <h1 className="text-center text-[#3e8e65] text-3xl font-extrabold lg:text-4xl">
               Start earning today
             </h1>
           </div>
@@ -24,7 +28,7 @@ const Footer = () => {
           <div className="w-full lg:w-auto">
             <Link
               href="#"
-              className="block w-full lg:w-auto text-center text-sm bg-blue-700 rounded-lg text-white py-2.5 px-10 hover:bg-blue-600 whitespace-nowrap"
+              className="block w-full lg:w-auto text-center text-sm bg-[#3e8e65] rounded-lg text-white py-2.5 px-10 hover:bg-[#3e8e65]/[.9] whitespace-nowrap"
             >
               SIGN UP NOW
             </Link>
@@ -33,7 +37,7 @@ const Footer = () => {
       </div>
       <div className="flex-col bg-gray-50 px-4 lg:px-20 lg:pt-12 lg:flex lg:flex-row lg:justify-between">
         <div className="mt-4">
-          <h1 className="text-base font-semibold pt-4 ">COMPANY</h1>
+          <h1 className="text-base text-[#3e8e65] font-semibold pt-4 ">COMPANY</h1>
           <p className="text-base font-normal text-gray-500 mt-3 hover:cursor-pointer">
             About
           </p>
@@ -51,7 +55,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="mt-4">
-          <h1 className="text-base font-semibold pt-4 ">HELP AND SUPPORT</h1>
+          <h1 className="text-base text-[#3e8e65] font-semibold pt-4 ">HELP AND SUPPORT</h1>
           <p className="text-base font-normal text-gray-500 mt-3 hover:cursor-pointer">
             Contact Us
           </p>
@@ -66,7 +70,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="mt-4">
-          <h1 className="text-base font-semibold pt-4 ">RESOURCES</h1>
+          <h1 className="text-base text-[#3e8e65] font-semibold pt-4 ">RESOURCES</h1>
           <p className="text-base font-normal text-gray-500 mt-3 hover:cursor-pointer">
             Third-Party Tools
           </p>
@@ -84,7 +88,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="mt-4">
-          <h1 className="text-base font-semibold pt-4 ">LEGAL</h1>
+          <h1 className="text-base text-[#3e8e65] font-semibold pt-4 ">LEGAL</h1>
           <p className="text-base font-normal text-gray-500 mt-3 hover:cursor-pointer">
             Privacy Policy
           </p>
@@ -100,8 +104,8 @@ const Footer = () => {
       <div className="flex-col bg-gray-50 justify-items-center px-4 py-6 lg:px-20">
         <div className="flex gap-4">
           <img
-            className="w-[144px]"
-            src="https://flowbite.s3.amazonaws.com/brand/logo-light/type/flowbite-logo.png"
+            className="w-[70px]"
+            src="/logo.png"
             alt="logo"
           />
         </div>

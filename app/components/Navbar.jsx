@@ -1,3 +1,7 @@
+"use client";
+
+
+
 import React from "react";
 import Link from "next/link";
 
@@ -7,27 +11,31 @@ const Navbar = () => {
       <div className="flex items-center justify-between px-4 pt-6 lg:px-20 ">
         <div className="flex gap-4">
           <img
-            className="w-[144px]  "
-            src="https://flowbite.s3.amazonaws.com/brand/logo-light/type/flowbite-logo.png"
+            className="w-[90px]  "
+            src="/logo.png"
             alt="logo"
           />
-          <div className="hidden py-[8.5px] text-base font-medium text-gray-900 lg:inline-flex lg:gap-4">
-            <Link href="#company">Company</Link>
-            <Link href="#">Marketplace</Link>
-            <Link href="#">Features</Link>
-            <Link href="#">Team</Link>
-            <Link href="#">Contact</Link>
+          <div className="hidden lg:ml-4 ml-0 py-[30px] text-base font-medium text-gray-900 lg:inline-flex lg:gap-12">
+            <Link className="hover:text-[#3e8e65]/[.9]" href="#company">Home</Link>
+            <Link className="hover:text-[#3e8e65]/[.9]" href="#">Program Details</Link>
+            <Link className="hover:text-[#3e8e65]/[.9]" href="#">Speakers</Link>
+            <Link className="hover:text-[#3e8e65]/[.9]" href="#">FAQ</Link>
+            {/* <Link className="hover:text-[#3e8e65]/[.9]" href="#">Contact</Link> */}
           </div>
         </div>
         <div className="hidden lg:inline-flex ">
-          <Link
+          {/* <Link
             href="#"
-            className="text-sm font-medium text-gray-900 p-[10px] "
+            className="text-sm font-medium text-gray-900 p-[10px] lg:mr-4 mr-0"
           >
             Log In
-          </Link>
-          <button className="bg-blue-700 text-white text-sm px-5 rounded-lg hover:bg-blue-600 hover:cursor-pointer ">
-            Get started
+          </Link> */}
+          <button
+          onClick={() => {
+              window.open("https://lu.ma/cds4arxz", "_blank")
+          }}
+          className="bg-[#3e8e65] py-[10px] text-white text-sm px-5 rounded-lg hover:bg-[#3e8e65]/[.9] hover:cursor-pointer ">
+            Register Now!
           </button>
         </div>
         <div className="lg:hidden">

@@ -1,3 +1,6 @@
+"use client";
+
+
 import React from "react";
 
 const FAQ = () => {
@@ -5,7 +8,7 @@ const FAQ = () => {
     <>
       <div className="flex-col justify-items-center px-4 py-8 lg:pb-24 lg:px-20">
         <div className="mb-12">
-          <h1 className="text-4xl font-extrabold text-center">
+          <h1 className="text-4xl text-[#3e8e65] font-extrabold text-center">
             Frequently asked questions
           </h1>
         </div>
@@ -31,7 +34,7 @@ const FAQ = () => {
                 alternative to FlowBite itself. With that being said, feel free
                 to use this design kit for your open-source projects. Find out
                 more information by{" "}
-                <span className="text-blue-600 font-medium">
+                <span className="text-[#3e8e65]/[.9] font-medium">
                   {" "}
                   reading the license.
                 </span>
