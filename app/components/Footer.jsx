@@ -35,7 +35,7 @@ const Footer = () => {
               
               className="block w-full lg:w-auto text-center text-sm bg-[#3e8e65] rounded-lg text-white py-2.5 px-10 hover:bg-[#3e8e65]/[.9] whitespace-nowrap"
             >
-              View Programs
+              View Programs Details
             </button>
           </div>
         </div>
