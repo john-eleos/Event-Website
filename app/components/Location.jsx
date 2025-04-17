@@ -28,12 +28,7 @@ const Location = () => {
           <p className="text-left text-lg mt-4 font-normal">
             CMCM Drive Way, off Ishola Bello St, Ojodu, 101233, Lagos, Nigeria
           </p>
-          {/* <p className="text-left text-lg my-4 font-normal text-gray-500">
-            Flowbite Web Summit is a large high-tech conference space right in
-            the heart of downtown San Francisco. It is easily accessible via
-            BART and Muni. Bespoke is located inside the Westfield San Francisco
-            Centre mall on level 4, next to Bloomingdale’s Westfield.
-          </p> */}
+         
           <button onClick={openMap} className="border border-gray-200 rounded-lg py-2.5 px-5 hover:bg-gray-100 hover:cursor-pointer my-8">
             <i className="fa-solid fa-location-dot mr-2"></i>Show on google maps
           </button>
