@@ -20,32 +20,57 @@ export default function Home() {
 
   const teamsRef = useRef(null);
   const featuresRef = useRef(null);
-  const locationRef = useRef(null);
   const faqRef = useRef(null);
-  const ticketsRef = useRef(null);
+  const aboutRef = useRef(null);
 
   const scrollToView = (ref) => {
     if(typeof ref !== "undefined" && ref.current !== null){
       ref.current.scrollIntoView({ behavior: "smooth" });
     }
   }
+
+  const navScroll=(section)=>{
+    switch (section) {
+      case "speakers":
+        if(typeof teamsRef !== "undefined" && teamsRef.current !== null){
+          teamsRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+        break;
+      case "faq":
+        if(typeof faqRef !== "undefined" && faqRef.current !== null){
+          faqRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+        break;
+      case "about":
+        if(typeof aboutRef !== "undefined" && aboutRef.current !== null){
+          aboutRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+        break;
+      default:
+        break;
+    }
+  }
+
   return (
     <>
-      <Navbar />
+      <Navbar routeScroll={navScroll}/>
+      <div ref={aboutRef}>
       <Hero routeToTeams={() => scrollToView(teamsRef)} />
+      </div>
       <About routeToFeatures={()=>scrollToView(featuresRef)}/>
       <Socialproof />
       <div ref={featuresRef}>
       <Features />
       </div>
       <div ref={teamsRef}>
-      <Team 
-      //  action={() => scrollToView(teamsRef)}
-        />
+      <Team />
       </div>
       <Location />
+      <div ref={faqRef}>
       <FAQ />
-      <Tickets />
+      </div>
+      
+      {/* <Tickets /> */}
       <Footer />
     </>
   );

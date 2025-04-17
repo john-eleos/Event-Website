@@ -5,6 +5,8 @@
 import React from "react";
 import Link from "next/link";
 
+export const programs = "https://docs.google.com/spreadsheets/d/1YCygUltH7xpepHDVmN3SIYVfpk4AgDFAHK_TDCQvSYQ/edit?usp=drivesdk";
+
 const Footer = () => {
   return (
     <>
@@ -12,30 +14,33 @@ const Footer = () => {
         <div className="flex-col justify-items-center px-4 pt-8 lg:mt-24 lg:mb-8 lg:px-20 lg:py-0">
           <div className="pb-4">
             <h1 className="text-center text-[#3e8e65] text-3xl font-extrabold lg:text-4xl">
-              Start earning today
+              Be a part of the convention!
             </h1>
           </div>
         </div>
         <div className="flex flex-col gap-4 mx-4 lg:mx-0 lg:inline-flex lg:flex-row">
-          <div className="w-full lg:w-auto">
+          {/* <div className="w-full lg:w-auto">
             <Link
               href="#"
               className="block w-full lg:w-auto text-center text-black text-sm py-2.5 px-10 border border-gray-200 rounded-lg hover:bg-gray-100 whitespace-nowrap"
             >
               RECEIVE NEWS
             </Link>
-          </div>
+          </div> */}
           <div className="w-full lg:w-auto">
-            <Link
-              href="#"
+            <button
+            onClick={() => {
+              window.open(programs, "_blank")
+          }}
+              
               className="block w-full lg:w-auto text-center text-sm bg-[#3e8e65] rounded-lg text-white py-2.5 px-10 hover:bg-[#3e8e65]/[.9] whitespace-nowrap"
             >
-              SIGN UP NOW
-            </Link>
+              View Programs
+            </button>
           </div>
         </div>
       </div>
-      <div className="flex-col bg-gray-50 px-4 lg:px-20 lg:pt-12 lg:flex lg:flex-row lg:justify-between">
+      {/* <div className="flex-col bg-gray-50 px-4 lg:px-20 lg:pt-12 lg:flex lg:flex-row lg:justify-between">
         <div className="mt-4">
           <h1 className="text-base text-[#3e8e65] font-semibold pt-4 ">COMPANY</h1>
           <p className="text-base font-normal text-gray-500 mt-3 hover:cursor-pointer">
@@ -99,7 +104,7 @@ const Footer = () => {
             EULA
           </p>
         </div>
-      </div>
+      </div> */}
       <div className="border-b-2 bg-gray-50 border-gray-100 p-4 md:px-20"></div>
       <div className="flex-col bg-gray-50 justify-items-center px-4 py-6 lg:px-20">
         <div className="flex gap-4">
@@ -111,15 +116,15 @@ const Footer = () => {
         </div>
         <div>
           <p className="pt-4 text-base font-normal text-gray-500 md:pt-0">
-            © 2025 Flowbite, Inc. All rights reserved.
+            © 2025 CMCM Youth for Christ, All rights reserved.
           </p>
         </div>
-        <div className="text-2xl text-gray-500">
+        {/* <div className="text-2xl text-gray-500">
           <i className="fa-brands fa-github mx-2"></i>
           <i className="fa-brands fa-x-twitter mx-2"></i>
           <i className="fa-brands fa-dribbble mx-2"></i>
           <i className="fa-brands fa-instagram mx-2"></i>
-        </div>
+        </div> */}
       </div>
     </>
   );

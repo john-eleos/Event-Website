@@ -4,8 +4,9 @@
 
 import React from "react";
 import Link from "next/link";
+import { programs } from "./Footer";
 
-const Navbar = () => {
+const Navbar = ({routeScroll}) => {
   return (
     <>
       <div className="flex items-center justify-between px-4 pt-6 lg:px-20 ">
@@ -16,10 +17,12 @@ const Navbar = () => {
             alt="logo"
           />
           <div className="hidden lg:ml-4 ml-0 py-[30px] text-base font-medium text-gray-900 lg:inline-flex lg:gap-12">
-            <Link className="hover:text-[#3e8e65]/[.9]" href="#company">Home</Link>
-            <Link className="hover:text-[#3e8e65]/[.9]" href="#">Program Details</Link>
-            <Link className="hover:text-[#3e8e65]/[.9]" href="#">Speakers</Link>
-            <Link className="hover:text-[#3e8e65]/[.9]" href="#">FAQ</Link>
+            <button onClick={()=>routeScroll("about")} className="hover:text-[#3e8e65]/[.9]" href="#about">Home</button>
+            <button onClick={() => {
+              window.open(programs, "_blank")
+              }} className="hover:text-[#3e8e65]/[.9]" href="#programs">Program Details</button>
+            <button onClick={()=>routeScroll("speakers")} className="hover:text-[#3e8e65]/[.9]" href="#speakers">Speakers</button>
+            <button onClick={()=>routeScroll("faq")} className="hover:text-[#3e8e65]/[.9]" href="#faq">FAQ</button>
             {/* <Link className="hover:text-[#3e8e65]/[.9]" href="#">Contact</Link> */}
           </div>
         </div>
