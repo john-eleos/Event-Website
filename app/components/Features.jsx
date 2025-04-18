@@ -20,7 +20,7 @@ const Features = () => {
             Bring your A-game! From friendly competitions to high-energy matches, get ready for fun, teamwork, and an adrenaline rush like never before.
           </p>
         </div>
-        <div className="flex-col items-center text-center pb-11 mx-8 lg:w-[405.33px] mt-40">
+        <div className="flex-col items-center text-center pb-11 mx-8 lg:w-[405.33px] lg:mt-40 mt-1">
           <i className="fa-solid fa-briefcase text-xl text-[#3e8e65] p-3 bg-[#3e8e65]/[.1] rounded-lg"></i>
 
           <h1 className="text-xl text-[#3e8e65] font-bold mt-2">AI Exposition & Teaching</h1>

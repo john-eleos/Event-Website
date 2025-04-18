@@ -15,7 +15,7 @@ import P6 from "../../public/people/PastorAdegokeOmotola.jpg";
 import P7 from "../../public/people/PastorOlugbeminiyiOlaifa.jpg";
 import P8 from "../../public/people/PastorMrsFolashadeOlanrewaju.jpg";
 import P9 from "../../public/people/PastorMrsFolashadeAdebisi.jpg";
-// import P10 from "../../public/people/p10.jpg";
+import P10 from "../../public/people/VictorOzomoge.jpg";
 // import P11 from "../../public/people/p11.jpg";
 // import P12 from "../../public/people/p12.jpg";
 
@@ -82,11 +82,12 @@ export const teams = [
     role: "People and Culture Development Expert",
     img: P4,
   },
-  // {
-  //   name: "Roberta Casas",
-  //   role: "SEO Specialist",
-  //   img: P5,
-  // },
+  {
+    name: "Victor Ozomoge",
+    role: "CEO, Zomoge Inspired",
+    instagram:"https://www.instagram.com/victorozomoge?igsh=MWQydnltZGoyeTRhbQ==",
+    img: P10,
+  },
   // {
   //   name: "Joseph McFall",
   //   role: "Backend Developer",
@@ -166,6 +167,9 @@ const Team = () => {
               </Link>}
               {person.facebook&&<Link href={person.facebook} className="text-[#3e8e65]/[.9] hover:text-blue-800">
                 <i className="fab fa-facebook"></i>
+              </Link>}
+              {person.instagram&&<Link href={person.instagram} className="text-[#3e8e65]/[.9] hover:text-blue-800">
+                <i className="fab fa-instagram"></i>
               </Link>}
               {/* <Link href="#" className="text-pink-500 hover:text-pink-700">
                 <i className="fab fa-dribbble"></i>
