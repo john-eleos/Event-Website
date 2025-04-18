@@ -10,11 +10,11 @@ import P1 from "../../public/people/mr-dotun.jpg";
 import P2 from "../../public/people/mr-jide.jpg";
 import P3 from "../../public/people/mr-austin.jpg";
 import P4 from "../../public/people/miss-echeka.jpg";
-// import P5 from "../../public/people/p5.jpg";
-// import P6 from "../../public/people/p6.jpg";
-// import P7 from "../../public/people/p7.jpg";
-// import P8 from "../../public/people/p8.jpg";
-// import P9 from "../../public/people/p9.jpg";
+import P5 from "../../public/people/ProphetPeterAbiolaAdebisi.jpg";
+import P6 from "../../public/people/PastorAdegokeOmotola.jpg";
+import P7 from "../../public/people/PastorOlugbeminiyiOlaifa.jpg";
+import P8 from "../../public/people/PastorMrsFolashadeOlanrewaju.jpg";
+import P9 from "../../public/people/PastorMrsFolashadeAdebisi.jpg";
 // import P10 from "../../public/people/p10.jpg";
 // import P11 from "../../public/people/p11.jpg";
 // import P12 from "../../public/people/p12.jpg";
@@ -25,6 +25,39 @@ import P4 from "../../public/people/miss-echeka.jpg";
 export const teamsCount = 20;
 
 export const teams = [
+  {
+    name: "Prophet Peter Abiola Adebisi",
+    role: "President CMCM Worldwide",
+    facebook:"https://www.facebook.com/ProphetPeterAbiolaAdebisicmcmWorldwide",
+    img: P5,
+  },
+  {
+    name: "Pastor Mrs Folashade Adebisi",
+    role: "Vice President CMCM Worldwide",
+    facebook:"https://www.facebook.com/adebisi.adebisi.92798",
+    img: P9,
+  },
+
+
+  {
+    name: "Pastor Adegoke Omotola",
+    role: "Minister",
+    facebook:"https://www.facebook.com/adegoke.omotola",
+    img: P6,
+  },
+  {
+    name: "Pastor Olugbeminiyi Olaifa",
+    role: "Minister",
+    facebook:"https://www.facebook.com/olugbeminiyi",
+    img: P7,
+  },
+  {
+    name: "Pastor Mrs Folashade Olanrewaju",
+    role: "Minister",
+    facebook:"https://www.facebook.com/olanrewaju.folasade.54",
+    img: P8,
+  },
+
   {
     name: "Mr Dotun Adeoye",
     role: "AI Product Leader",
@@ -128,9 +161,12 @@ const Team = () => {
             <h2 className="text-lg font-bold">{person.name}</h2>
             <p className="text-sm text-gray-500">{person.role}</p>
             <div className="flex justify-center gap-4 mt-2">
-              <Link href={person.linkedIn} className="text-[#3e8e65]/[.9] hover:text-blue-800">
+              {person.linkedIn&&<Link href={person.linkedIn} className="text-[#3e8e65]/[.9] hover:text-blue-800">
                 <i className="fab fa-linkedin"></i>
-              </Link>
+              </Link>}
+              {person.facebook&&<Link href={person.facebook} className="text-[#3e8e65]/[.9] hover:text-blue-800">
+                <i className="fab fa-facebook"></i>
+              </Link>}
               {/* <Link href="#" className="text-pink-500 hover:text-pink-700">
                 <i className="fab fa-dribbble"></i>
               </Link>
