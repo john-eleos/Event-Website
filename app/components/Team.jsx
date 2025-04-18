@@ -16,7 +16,7 @@ import P7 from "../../public/people/PastorOlugbeminiyiOlaifa.jpg";
 import P8 from "../../public/people/PastorMrsFolashadeOlanrewaju.jpg";
 import P9 from "../../public/people/PastorMrsFolashadeAdebisi.jpg";
 import P10 from "../../public/people/VictorOzomoge.jpg";
-// import P11 from "../../public/people/p11.jpg";
+import P11 from "../../public/people/PastorGodswillOyor.jpg";
 // import P12 from "../../public/people/p12.jpg";
 
 
@@ -57,6 +57,13 @@ export const teams = [
     facebook:"https://www.facebook.com/olanrewaju.folasade.54",
     img: P8,
   },
+  {
+    name: "Pastor Godswill Oyor",
+    role: "Minister",
+    linkedIn:"https://www.linkedin.com/in/godswill-oyor?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    instagram:"https://www.instagram.com/godswilloyor?igsh=d3FsYjIyaGk4OW9t",
+    img: P11,
+  },
 
   {
     name: "Mr Dotun Adeoye",
@@ -88,11 +95,7 @@ export const teams = [
     instagram:"https://www.instagram.com/victorozomoge?igsh=MWQydnltZGoyeTRhbQ==",
     img: P10,
   },
-  // {
-  //   name: "Joseph McFall",
-  //   role: "Backend Developer",
-  //   img: P6,
-  // },
+
   // {
   //   name: "Karen Nelson",
   //   role: "Designer",
